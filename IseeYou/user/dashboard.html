@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta content='width=device-width, initial-scale=1' name='viewport'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />		
+		<title>Dashboard</title>
+		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
+		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+	<script type="text/javascript" src="cordova.js"></script>
+</head>
+	<body>
+		<div class="container">
+			<!-- Push Wrapper -->
+		<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">Query</h2>
+						<ul>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-search" href="#">Find Places</a>
+								<div class="mp-level">
+									<h2 class="icon icon-search">Search Places</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li>
+											<a href="restaurants.html">Restaurants</a>
+										</li>
+										<li>
+											<a class="icon icon-location" href="hotels.html">Hotels</a>
+										</li>
+										
+										<li>
+											<a class="icon icon-phone" href="atms.html">ATM</a>
+										</li>
+										
+										<li>
+											<a class="icon icon-phone" href="fuel_station.html">Gas Station</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							</ul>
+							
+					</div>
+				</nav>
+			<header>
+			<div class="block block-40 clearfix">
+			<a href="#" id="trigger" class="menu-trigger"></a>
+			<span><span><span>You Are Here</span></span></span>
+			</div>
+			</header>
+			<br><br><br><br><br>
+			<div class='circle-container'>
+	<a href='#' class='center'><img src=''></a>
+	<a href='atms.html' class='deg0'><img src='img/atm.jpg'></a>
+	<a href='restaurants.html' class='deg45'><img src='img/restaurant.jpg'></a>
+	<a href='hotels.html' class='deg135'><img src='img/hoteel.jpg'></a>
+	<a href='fuel_station.html' class='deg180'><img src='img/fuel.jpg'></a>
+	<a href='atms.html' class='deg225'><img img src='img/atm.jpg'></a>
+	<a href='atms.html' class='deg315'><img img src='img/atm.jpg'></a>
+</div>
+			 <!-- <a href='#' class='deg0' class="myButton">pink</a> -->
+		</div>			<!-- /pusher -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/mlpushmenu.js"></script>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+	</body>
+</html>
+
+
+

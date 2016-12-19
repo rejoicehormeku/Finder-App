@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+		 <script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="scripts/jquery.js"></script>
+		<!-- your scripts here -->
+		
+		<script src="scripts/jquery.mobile.js"></script>
+		<title>app</title>
+	</head>
+	<body>
+	   <div data-role="page" id="landingPage" style="background: white">
+
+			
+				<button id = "barcode"> Get Barcode </button>
+
+			
+		</div>
+
+	</body>
+</html>

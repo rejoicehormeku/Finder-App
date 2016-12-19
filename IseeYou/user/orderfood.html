@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Signup RejiApp</title>
+  <!-- CORE CSS-->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="styler.css" rel="stylesheet">
+
+<style type="text/css">
+html,
+body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin {
+  margin: 0 !important;
+}
+
+</style>  
+<script>
+(function(){
+$(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+  
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  });
+  </script>
+</head>
+<body>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://localhost/IseeYou/user/img/restaurant.jpg">
+    </div>
+    <div class="card-content">
+	
+      <div class="card-title activator grey-text text-darken-4">Restaurant<i class="material-icons right">more_vert</i></div>
+      <!-- <p><a href="#">This is a link</a></p> -->
+	  
+	 <pre> 
+<i class="material-icons prefix">phone</i>  <a href = "233 546 987 6598">233 546 987 6598</a>    
+<button id = "createContact">ADD CONTACT</button>   		  
+		  
+	 </pre>
+	<div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+<textarea id="review" placeholder="Write Review" id="icon_prefix2" id="first_name" type="tel" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2"></label>
+        </div>
+      </div>
+	  
+	  <h1>Rate Us!</h1> <div id="rating" class="rating">
+    <input  id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input  id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input  id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input  id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input  id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input  id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input  id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input  id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input  id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</div>	
+<br><br><br>
+    <button class="btn waves-effect waves-light col s12" onclick = "Food()">Save</button>
+
+
+    </div>
+	 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+      <script type="text/javascript" src="index.js"></script>
+
+  </div>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  
